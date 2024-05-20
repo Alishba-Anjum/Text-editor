@@ -127,6 +127,14 @@ textarea {
 .underline {
   font-size: 25px;
 }
+button{
+   background-color: transparent;
+   border: none;
+   padding: 2px;
+}
+button:hover{
+   background-color: #d6c1c1;
+}
 
 @media (max-width: 450px) {
   .box {
