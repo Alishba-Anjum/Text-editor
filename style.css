@@ -16,13 +16,14 @@ body {
 }
 
 .box {
-  width: 400px;
-  height: 400px;
+  width: 700px;
+  height: 500px;
   position: relative;
   background-color: #2f2f2f;
   padding: 8px;
   overflow: hidden;
-  margin-top: 70px;
+  margin-top: 10%;
+  box-shadow: 5px 5px 12px rgb(198, 190, 190), -5px -5px 12px rgb(111, 110, 110);
 }
 #in {
   height: 100%;
@@ -38,8 +39,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  height: 600px;
-  width: 200px;
+  height: 900px;
+  width: 400px;
   background-color: #fff;
   animation: move 1.5s infinite;
 }
@@ -50,27 +51,122 @@ body {
   }
 }
 
-
-.heading{
-   color: #fff;
-   text-align: center;
+.heading {
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
 }
-textarea{
-   height: 300px;
-   width: 350px;
-   margin: 15px 15px;
-   font-size: 20px;
-   padding-top: 0;
-   box-sizing: border-box;
-   border-radius: 8px;
-} 
+textarea {
+  height: 400px;
+  width: 650px;
+  margin: 15px 15px;
+  font-size: 25px;
+  padding-top: 8px;
+  font-weight: 300;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: inset 5px 5px 20px rgb(33, 33, 34),
+    inset -5px -5px 20px rgb(33, 33, 34);
+  background-color: #fff;
+}
 
-.navBar{
-   width: 600px;
-   height: 80px;
-   background-color: #fff;
-   position: absolute;
-   top: 10%;
-   border-radius: 20px;
-   display: flex;
+.navBar {
+  width: 720px;
+  height: 80px;
+  background-color: #fff;
+  position: absolute;
+  top: 5%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 5px 5px 20px rgb(33, 33, 34),
+    inset -5px -5px 20px rgb(33, 33, 34);
+  column-gap: 5vw;
+}
+.font {
+  display: flex;
+}
+.font i {
+  position: absolute;
+  top: 40%;
+  left: 170px;
+}
+.font-list {
+  width: 80px;
+  height: 70px;
+  border: 1px solid black;
+  padding: 5px;
+  font-weight: 500;
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  background: linear-gradient(
+    to top right,
+    rgb(227, 199, 199),
+    rgb(23, 22, 22)
+  );
+  color: #fff;
+  display: none;
+}
+
+.text_align {
+  display: flex;
+}
+.text_align i {
+  margin: 10px;
+  font-size: 25px;
+}
+
+.bold {
+  font-size: 25px;
+}
+.italic {
+  font-size: 25px;
+}
+.underline {
+  font-size: 25px;
+}
+
+@media (max-width: 450px) {
+  .box {
+    width: 350px;
+    height: 400px;
+    margin-top: 40%;
+  }
+  .box::after {
+    width: 200px;
+    height: 700px;
+  }
+  textarea {
+    width: 300px;
+    height: 315px;
+    border: none;
+  }
+  .navBar {
+    width: 340px;
+    column-gap: 7vw;
+  }
+  .bold {
+    font-size: 18px;
+  }
+  .italic {
+    font-size: 18px;
+  }
+  .underline {
+    font-size: 18px;
+  }
+  .text_align i {
+    font-size: 18px;
+    margin: 4px;
+  }
+  .font {
+    font-size: 12px;
+  }
+  .font i {
+    left: 100px;
+  }
+  .heading {
+    font-size: 20px;
+  }
 }
