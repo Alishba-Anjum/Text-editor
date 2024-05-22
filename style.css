@@ -13,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #000;
+  user-select: none;
 }
 
 .box {
@@ -68,6 +69,7 @@ textarea {
   box-shadow: inset 5px 5px 20px rgb(33, 33, 34),
     inset -5px -5px 20px rgb(33, 33, 34);
   background-color: #fff;
+  cursor: pointer;
 }
 
 .navBar {
@@ -83,6 +85,7 @@ textarea {
   box-shadow: inset 5px 5px 20px rgb(33, 33, 34),
     inset -5px -5px 20px rgb(33, 33, 34);
   column-gap: 5vw;
+  cursor: pointer;
 }
 .font {
   display: flex;
